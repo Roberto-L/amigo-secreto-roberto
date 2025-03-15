@@ -88,7 +88,7 @@ function reiniciar() {
     limpiarCaja();
 }
 
-// Funcionalidad para botón Añadir con tecla enter
+// Funcionalidad para botón Añadir con tecla Enter
 document.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         document.getElementById("botonAñadir").click();
