@@ -8,7 +8,7 @@ Este es un pequeño proyecto web para realizar un sorteo de "Amigo Secreto" de m
 1. **Añadir amigos**: Se pueden ingresar nombres en un campo de texto y agregarlos a una lista.
 2. **Evitar nombres duplicados**: Si se ingresa un nombre repetido, se mostrará una alerta indicando que debe ingresar otro nombre o añadir un número para diferenciarlo.
 3. **Sortear un amigo secreto**: Una vez ingresados al menos dos nombres, el usuario puede realizar el sorteo.
-4. **Restablecer la lista**: Se puede borrar toda la lista de amigos y comenzar de nuevo.
+4. **Restablecer la lista**: Se puede borrar toda la lista de amigos y comenzar de nuevo con un botón.
 5. **Continuar lista**: Se pueden añadir nombres una vez realizado el sorteo por si se olvidó alguno, y así evitar volver a digitar todos los nombres.
 6. **Mostrar último ganador**: Al reiniciar se muestra el último ganador del sorteo.
 7. **Interfaz accesible y responsive**: La aplicación es fácil de usar en diferentes dispositivos.
