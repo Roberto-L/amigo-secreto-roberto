@@ -47,6 +47,8 @@ function limpiarCaja() {
     document.getElementById('amigo').focus();
 }
 
+let ultimoGanador = '';
+
 function sortearAmigo() {
     // Mensaje de alerta si hay menos de dos amigos en la lista para sortear, el challenge pide que no esté vacío, pero para un sorteo deben haber por lo menos 2 nombres
     if (listaNombres.length < 2) {
@@ -57,6 +59,9 @@ function sortearAmigo() {
     // Se elige un nombre al azar desde el arreglo
     let amigoSorteado = listaNombres[Math.floor(Math.random() * listaNombres.length)];
     
+    // Se guarda el nombre del último ganador
+    ultimoGanador = amigoSorteado
+
     document.getElementById('resultado').innerHTML = `Tu amigo sorteado es: ${amigoSorteado}`;
 
     // Se borra la lista de amigos luego de realizar el sorteo
@@ -72,7 +77,13 @@ function sortearAmigo() {
 function reiniciar() {
     listaNombres = [];
     document.getElementById('resultado').innerHTML = '';
-    document.getElementById('listaAmigos').innerHTML = 'No hay amigos en la lista';
+    // Se muestra el ultimo ganador al reiniciar y en caso no hubo ganador se muestra mensaje por defecto
+    if (ultimoGanador) {
+        document.getElementById('listaAmigos').innerHTML = `El último ganador fue <strong>${ultimoGanador}</strong>`;
+    } else {
+        document.getElementById('listaAmigos').innerHTML = 'No hay amigos en la lista';
+    }
+
     document.getElementById('botonSortear').disabled = false;
     limpiarCaja();
 }
