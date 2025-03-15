@@ -152,6 +152,19 @@ ul {
     background-color: var(--color-button);
     font-size: 16px;
 }
+/* Botón de reinicio */
+.button-restart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 
 .button-draw img {
     margin-right: 40px;
