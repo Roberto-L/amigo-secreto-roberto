@@ -12,7 +12,7 @@ function agregarAmigo() {
     } 
     // Si el nombre ya ha sido ingresado, mensaje de alerta
     else if (listaNombres.includes(nombreConMayuscula)) {
-        alert("Este nombre se está duplicando, prueba otro nombre o añade un número después para diferenciarlos.");
+        alert("Este nombre ya ha sido ingresado.");
         document.getElementById('amigo').focus();
     } 
     // Si el nombre es aceptable, se agrega a la lista y se imprime en pantalla
@@ -76,7 +76,7 @@ function reiniciar() {
 // Permitir que puedan agregar amigos con la tecla 'Enter'
 document.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
-        document.querySelector(".button-add").click();
+        document.getElementById("botonAñadir").click();
     }
 });
 
